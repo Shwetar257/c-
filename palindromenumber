@@ -1,0 +1,16 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+int num,rev=0,i,temp=10;
+cout<<"enter a number";
+cin>>num;
+for(i=0;i>num;i/=10)
+rev=(rev*tem)+(i%10);
+if(rev==num)
+cout<<"the number is palindrome\n";
+else
+cout<<"the number is not palindrome\n";
+}
+
