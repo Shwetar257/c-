@@ -1,0 +1,30 @@
+C++ getline()
+The cin is an object which is used to take input from the user but does not allow to take the input in multiple lines. To accept the multiple lines, we use the getline() function. It is a pre-defined function defined in a <string.h> header file used to accept a line or a string from the input stream until the delimiting character is encountered.
+
+Syntax of getline() function:
+There are two ways of representing a function:
+
+The first way of declaring is to pass three parameters.
+istream& getline( istream& is, string& str, char delim );  
+The above syntax contains three parameters, i.e., is, str, and delim.
+is: It is an object of the istream class that defines from where to read the input stream.
+
+str: It is a string object in which string is stored.
+
+delim: It is the delimiting character.
+
+
+
+
+
+
+#include <iostream>  
+#include<string.h>  
+using namespace std;  
+int main()  
+{  
+string name; // variable declaration.  
+std::cout << "Enter your name :" << std::endl;  
+getline(cin,name); // implementing a getline() function  
+cout<<"\nHello "<<name;  
+return 0;}  
